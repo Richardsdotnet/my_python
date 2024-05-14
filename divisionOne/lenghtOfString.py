@@ -30,11 +30,23 @@
 # result = int(first_num + second_num)
 # print(f"The sum of the two digits is {result}")
 
-print("Welcome to the weeks calculator")
-age = input("Welcome, What is your current Age? ")
-age_as_int = int(age)
-years_remaining = 90 - age_as_int
-days = years_remaining * 365
-weeks = years_remaining * 52
-months = years_remaining * 12
-print(f"Your have {days} days {weeks} weeks and {months} months left")
+# age = input("Welcome to Days, weeks and months calculator, What is your current Age?\n ")
+# age_as_int = int(age)
+# years_remaining = 90 - age_as_int
+# days = years_remaining * 365
+# weeks = years_remaining * 52
+# months = years_remaining * 12
+# print(f"Your have {days} days {weeks} weeks and {months} months left")
+
+print("Welcome to the tip calculator")
+bill = int(input("What was the total bill?\n"))
+tip_as_percent = int(input("What percentage tip would you want to give? 10, 12 or 15?\n"))
+number_of_friends = int(input("How many people to split the bill?\n"))
+tip_as_percent = tip_as_percent / 100
+total_tip_amount = bill * tip_as_percent
+total_bill = bill + total_tip_amount
+bill_per_person = total_bill / number_of_friends
+final_amount = round(bill_per_person, 2)
+print(f"Each person should pay: ${final_amount}")
+
+
