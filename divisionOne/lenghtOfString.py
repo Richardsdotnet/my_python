@@ -9,7 +9,8 @@ whiteSpace = name.count(" ")
 print(f"The total characters are {length - whiteSpace}")
 a = input("a:")
 b = input("b:")
+c = a
 a = b
-b = a
+b = c
 print("a = " + a)
 print("b = " + b)
