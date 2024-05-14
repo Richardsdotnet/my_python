@@ -7,3 +7,9 @@ name = input("What is your name?\n")
 length = len(name)
 whiteSpace = name.count(" ")
 print(f"The total characters are {length - whiteSpace}")
+a = input("a:")
+b = input("b:")
+a = b
+b = a
+print("a = " + a)
+print("b = " + b)
