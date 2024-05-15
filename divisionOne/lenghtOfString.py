@@ -51,9 +51,17 @@ print(f"Each person should pay: ${final_amount}")
 
 print("Welcome to the rollercoaster game ")
 height = int(input("Enter your height\n"))
-if height < 50:
-    print("Sorry, you are too short to ride")
+if height >= 50:
+    print("Have fun riding!!")
 else:
-    print("Have fun riding")
+    print("You need to grow older to ride")
+
+print("Welcome to the odd and even number game")
+number_to_check = int(input("Enter the number to check\n"))
+if number_to_check % 2 == 0:
+    print(f"{number_to_check} is an even number")
+else:
+    print(f"{number_to_check} is an odd number")
+
 
 
