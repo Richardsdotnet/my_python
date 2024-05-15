@@ -24,7 +24,7 @@
 # print("The name of your band is  " + city + " " + pet)
 
 # print("Welcome, input two numbers")
-# two_digit_number = input("Type a two digit number\n")
+# two_digit_number = input("Type a two-digit number\n")
 # first_num = int(two_digit_number[0])
 # second_num = int(two_digit_number[1])
 # result = int(first_num + second_num)
@@ -48,5 +48,12 @@ total_bill = bill + total_tip_amount
 bill_per_person = total_bill / number_of_friends
 final_amount = round(bill_per_person, 2)
 print(f"Each person should pay: ${final_amount}")
+
+print("Welcome to the rollercoaster game ")
+height = int(input("Enter your height\n"))
+if height < 50:
+    print("Sorry, you are too short to ride")
+else:
+    print("Have fun riding")
 
 
