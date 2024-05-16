@@ -60,8 +60,10 @@ print("Welcome to the odd and even number game")
 number_to_check = int(input("Enter the number to check\n"))
 if number_to_check % 2 == 0:
     print(f"{number_to_check} is an even number")
-else:
+elif number_to_check % 2 != 0:
     print(f"{number_to_check} is an odd number")
+else:
+    print("Invalid input")
 
 
 
