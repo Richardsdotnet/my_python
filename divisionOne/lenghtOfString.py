@@ -38,32 +38,45 @@
 # months = years_remaining * 12
 # print(f"Your have {days} days {weeks} weeks and {months} months left")
 
-print("Welcome to the tip calculator")
-bill = int(input("What was the total bill?\n"))
-tip_as_percent = int(input("What percentage tip would you want to give? 10, 12 or 15?\n"))
-number_of_friends = int(input("How many people to split the bill?\n"))
-tip_as_percent = tip_as_percent / 100
-total_tip_amount = bill * tip_as_percent
-total_bill = bill + total_tip_amount
-bill_per_person = total_bill / number_of_friends
-final_amount = round(bill_per_person, 2)
-print(f"Each person should pay: ${final_amount}")
-
-print("Welcome to the rollercoaster game ")
-height = int(input("Enter your height\n"))
-if height >= 50:
-    print("Have fun riding!!")
+# print("Welcome to the tip calculator")
+# bill = int(input("What was the total bill?\n"))
+# tip_as_percent = int(input("What percentage tip would you want to give? 10, 12 or 15?\n"))
+# number_of_friends = int(input("How many people to split the bill?\n"))
+# tip_as_percent = tip_as_percent / 100
+# total_tip_amount = bill * tip_as_percent
+# total_bill = bill + total_tip_amount
+# bill_per_person = total_bill / number_of_friends
+# final_amount = round(bill_per_person, 2)
+# print(f"Each person should pay: ${final_amount}")
+#
+# print("Welcome to the rollercoaster game ")
+# height = int(input("Enter your height\n"))
+# if height >= 50:
+#     print("Have fun riding!!")
+# else:
+#     print("You need to grow older to ride")
+#
+# print("Welcome to the odd and even number game")
+# number_to_check = int(input("Enter the number to check\n"))
+# if number_to_check % 2 == 0:
+#     print(f"{number_to_check} is an even number")
+# elif number_to_check % 2 != 0:
+#     print(f"{number_to_check} is an odd number")
+# else:
+#     print("Invalid input")
+print("Welcome to the Leap year calculator")
+year = int(input("Enter the year you want to check\n"))
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print(f"{year} is NOT a Leap year")
+        else:
+            print(f"{year} is a Leap Year")
+    else:
+        print(f"{year} is a Leap year")
 else:
-    print("You need to grow older to ride")
+    print(f"{year} is a leap year")
 
-print("Welcome to the odd and even number game")
-number_to_check = int(input("Enter the number to check\n"))
-if number_to_check % 2 == 0:
-    print(f"{number_to_check} is an even number")
-elif number_to_check % 2 != 0:
-    print(f"{number_to_check} is an odd number")
-else:
-    print("Invalid input")
 
 
 
